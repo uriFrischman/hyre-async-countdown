@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="hyreTimerApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uri Frischman's Async Timer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<div ng-controller="timerCtrl" id="parent-container">
+
+    <div id="title-container" class="center-text">
+        <h1>Uri Frischman's Async Timer</h1>
+    </div>
+
+    <div class="form-container">
+
+        <form ng-submit="beginCountdown(timeInput)">
+
+            <div class="input-group mb-3">
+                <input placeholder="Enter a valid number." ng-model="timeInput" type="number" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+        </form>
+
+    </div>
+
+    <div id="jumbotrons-container">
+
+        <div id="target-div" class="jumbotron jumbotron-fluid">
+            <div class="container center-text">
+                <h1>Target Div</h1>
+                <p>{{targetDivText}}</p>
+            </div>
+        </div>
+
+        <div id="error-div" class="jumbotron jumbotron-fluid">
+            <div class="container center-text">
+                <h1>Error Div</h1>
+                <p>{{errorDivText}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

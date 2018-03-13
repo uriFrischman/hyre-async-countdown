@@ -1,0 +1,26 @@
+body {
+    background-color: #a9a9a9;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#jumbotrons-container {
+    margin-top: 25px;
+}
+
+#parent-container {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 3%;
+}
+
+#target-div {
+    background-color: #00C851;
+    box-shadow: aliceblue;
+}
+
+#error-div {
+    background-color: #ff4444;
+}
